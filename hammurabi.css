@@ -1,0 +1,145 @@
+/* this is a comment; comments are ignored by web browsers */
+
+*{
+  margin: 0;
+  padding: 0;
+  color: rgb(222, 216, 159);
+  text-shadow: 0px 0px 10px rgb(0, 0, 0);
+}
+
+@keyframes moveSign{
+  from{top: -230px;}
+  to{top: 0px;}
+}
+@keyframes moveSignReverse{
+  from{top: 0px;}
+  to{top: -230px;}
+}
+
+body{
+  background-image:url(images/wall.png);
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  flex-wrap: wrap;
+}
+
+#lazy_workarround{
+  height: 300px;
+  width: 100vw;
+}
+
+#sign_wrapper{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  width: 100vw;
+  animation-duration: 3s;
+  top: -230px;
+}
+
+.sign{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 230px;
+  width: 200px;
+}
+
+.sign > img{
+  position: absolute;
+}
+
+.sign > p{
+  position: absolute;
+  top: 123px;
+}
+
+#info_button{
+  position: absolute;
+  top: -60px;
+  transition: 1s;
+  right: 0px;
+  z-index: 2;
+}
+
+#info_button:hover{
+  top: 0;
+}
+
+#bottom_wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+h1 {
+  width: 100vw;
+  height: 50px;
+  text-align: center;
+  font-size: 40px;
+}
+
+form > *{
+  font-size: 20px;
+}
+
+input[type=button]{
+  width: 20px;
+  height: 20px;
+  background-color: rgb(120, 116, 112);
+}
+
+input[type=range]{
+  width: 200px;
+}
+
+#info_board{
+  background-image: url(images/board.png);
+  width: 760px;
+  height: 400px;
+  background-size: cover;
+}
+
+#info_board > *{
+  font-size: 30px;
+  text-shadow: 0px 0px 15px rgb(0, 0, 0);
+}
+#year{
+  font-size: 50px;
+}
+
+#people {
+  display: block;
+  padding-left: 0;
+  list-style: none;
+}
+
+#people li {
+  display: inline;
+  margin-right: 10px;
+}
+
+#economy {
+  display: block;
+  padding-left: 0;
+  list-style: none; /* a list with no visible item markers */
+}
+
+#economy li {
+  margin-bottom: 1px;
+}
+
+.fieldset {
+  border-style: none; /* without this property, the slider area gets a border */
+}
+
+button {
+  margin: 30px 25px 0 0;
+  padding: 10px 15px;
+  background-color: rgb(120, 116, 112);
+}
+
+
