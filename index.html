@@ -1,3 +1,7 @@
+<!--
+August Andersson - 200705263192
+Ludvig Selberg - 200706195138
+-->
 <!DOCTYPE html>
 
 <html>
@@ -14,20 +18,20 @@
     <div id="lazy_workarround">
       <div id="sign_wrapper">
         <div class="sign">
-          <img src="images/sign.png" style="width: 200px; height: 230px;" onclick="historia()"></img>
+          <img src="images/sign.png" id="bild1" onclick="historia()"></img>
           <p>Hammurabis <br> historia</p>
         </div>
         <div class="sign">
-          <img src="images/sign.png" style="width: 200px; height: 230px;" onclick="spelet()"></img>
+          <img src="images/sign.png" id="bild2" onclick="spelet()"></img>
           <p>Orginal <br> spelet</p>
         </div>
         <div class="sign">
-          <img src="images/sign.png" style="width: 200px; height: 230px;" onclick="regler()"></img>
+          <img src="images/sign.png" id="bild3" onclick="regler()"></img>
           <p>Spelets <br> regler</p>
         </div>
       </div>
-      <img src="images/arrow.png" style="position: absolute; right: 80px; top: 80px; width: 150px; height: 300px; z-index: -1;">
-      <img src="images/pully.png" id="info_button" style="width: 120px; height: 160px;" onclick="displayScreen()"></img>
+      <img src="images/arrow.png" id="bild4">
+      <img src="images/pully.png" id="info_button" onclick="displayScreen()"></img>
     </div>
 
     <div id="bottom_wrapper">
@@ -86,8 +90,8 @@
       </form>
       <div id="info_board">
 
-        <div id="h1" style="font-weight: bold; font-size: 50px; display: none;">Klicka på rutorna</div>
-        <div id="info" style="display: none;"></div>
+        <div id="h1">Klicka på rutorna</div>
+        <div id="info"></div>
 
 
         <h2 id="year">TEXT-SOM-BYTS-UT-AV-JS-FILEN</h2>

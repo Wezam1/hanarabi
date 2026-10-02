@@ -1,10 +1,36 @@
-/* this is a comment; comments are ignored by web browsers */
-
+/*
+  August Andersson - 200705263192
+  Ludvig Selberg - 200706195138
+*/
 *{
   margin: 0;
   padding: 0;
   color: rgb(222, 216, 159);
   text-shadow: 0px 0px 10px rgb(0, 0, 0);
+}
+
+#bild1{
+  width: 200px; 
+  height: 230px;
+}
+
+#bild2{
+  width: 200px;
+  height: 230px;
+}
+
+#bild3{
+  width: 200px; 
+  height: 230px;
+}
+
+#bild4{
+   position: absolute; 
+   right: 80px; 
+   top: 80px; 
+   width: 150px; 
+   height: 300px; 
+   z-index: -1;
 }
 
 @keyframes moveSign{
@@ -57,7 +83,13 @@ body{
   top: 123px;
 }
 
+#info{
+  display: none;
+}
+
 #info_button{
+  width: 120px; 
+  height: 160px;
   position: absolute;
   top: -60px;
   transition: 1s;
@@ -80,6 +112,12 @@ h1 {
   height: 50px;
   text-align: center;
   font-size: 40px;
+}
+
+#h1{
+  font-weight: bold;
+  font-size: 50px; 
+  display: none;
 }
 
 form > *{
@@ -107,6 +145,7 @@ input[type=range]{
   font-size: 30px;
   text-shadow: 0px 0px 15px rgb(0, 0, 0);
 }
+
 #year{
   font-size: 50px;
 }
